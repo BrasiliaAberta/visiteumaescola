@@ -1,6 +1,23 @@
+#school
+  display: none
+#volunteer
+  display: none
+
+.sucessfulSignup
+  display: none
+  z-index: 9000
+  position: absolute
+  // height: 30vh
+  height: 100%
+  background: #FFFFFF
+  width: 100%
+  // right: -1000px
+  right: -200vh
+
 .content-2
-  padding-top: 130px
-  padding-bottom: 130px
+  // height: 100vh
+  padding-left: 12px
+  padding-bottom: 30px
   position: relative
   h3
     font-size: 30px
@@ -9,18 +26,62 @@
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
     margin-bottom: 35px
     font-weight: 300
+  a
+    padding-top: 5px
+    padding-bottom: 5px
   p
     font-size: 18px
     font-weight: normal
     color: #7f8c8d
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
     line-height: 30px
+  textarea
+    border-bottom: solid 1px #4A4A4A
+    border-top: solid 1px #4A4A4A
+    border-left: solid 1px #4A4A4A
+    border-right: solid 1px #4A4A4A
+    width: 84%
+    margin-top: 10px
+    margin-bottom: -10px
+    display: inline-block
+    padding-bottom: 0px
+  input
+    border: 0
+    padding-bottom: 0px
+    border-bottom: solid 1px #4A4A4A
+    border-bottom-left-radius: 0px
+    border-bottom-right-radius: 0px
+    outline: none
+    display: inline-block
+    width: 84%
+  label
+    display: inline-block
+    width: 140px
+    text-align: left
+  legend
+    // display: inline-block
+    width: 140px
+    font-weight: 400
+    font-size: 15px
+    text-align: left
+    margin-bottom: 0px
+    margin-top: 15px
+  // #first_checkbox
+  //   margin-left: 0px
+  input[type=checkbox]
+    margin: 5px
+    width: 5%
+    margin-left: 140px
   .btns
     margin-top: 50px
     font-size: 15px
     font-weight: normal
-    color: #7f8c8d
+    color: #FFFFFF
     .btn
+      &:hover
+        background-color: #FF5500
+      border-radius: 2px
+      background-color: #003344
       padding: 9px 17px 10px 15px
       margin-right: 28px
       > [class^="fui-"]
@@ -28,26 +89,6 @@
         font-weight: normal
         color: #ffffff
         margin: -2px 12px 0 0
-  .player
-    -webkit-border-radius: 6px
-    -moz-border-radius: 6px
-    border-radius: 6px
-    background: #f2f3f4
-    position: relative
-    overflow: hidden
-    height: 285px
-    .btn-play
-      -webkit-box-sizing: border-box
-      -moz-box-sizing: border-box
-      box-sizing: border-box
-      position: absolute
-      left: 10px
-      bottom: 10px
-      width: 60px
-      padding-left: 16px
-      -webkit-border-radius: 3px
-      -moz-border-radius: 3px
-      border-radius: 3px
 
 @media (max-width: 767px)
   .content-2

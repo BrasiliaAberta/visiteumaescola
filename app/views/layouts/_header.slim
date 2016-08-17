@@ -4,23 +4,19 @@ header.header-10
       .navbar.col-sm-12 role="navigation"
         .navbar-header
           button.navbar-toggle type="button"
-          a.brand href="#"  Visite uma escola
+          a.brand href="/"  Adote uma escola
         .collapse.navbar-collapse.pull-right
           ul.nav.pull-left
             li
               a href="#"  Conheça
             li
               a href="#"  Divulgue
-          form.navbar-form.pull-left
-            a.btn.btn-success href="#"  Participe
+            li
+            - if current_user 
+              li
+                p.navbar-text 
+                  |
+                    Signed in as               
+                  = current_user.name 
+                            
   .header-background
-
-section.header-10-sub.v-center
-  .background &nbsp;
-  div
-    .container
-      .hero-unit
-        h1 Por que não adotar uma escola?
-        p.head
-          | Compartilhe seu conhecimento e insire jovens em todo Brasil. Juntos podemos fazer mais e melhor.
-  /a.control-btn.fa.fa-chevron-down href="#"

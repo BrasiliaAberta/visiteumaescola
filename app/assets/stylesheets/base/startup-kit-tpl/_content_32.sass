@@ -1,12 +1,79 @@
-.content-32
+.content-30
   position: relative
-  padding-top: 160px
-  padding-bottom: 155px
-  text-align: center
-  //background: #f2f2f1
+  overflow: hidden
+  padding-top: 5px
+  // padding-bottom: 10px
+  text-align: right
+  p
+    font-family: 'Source Sans Pro', sans-serif
+    margin-bottom: 0px
+    font-size: 14px
+    font-weight: lighter
+    color: #FFFFFF
+    display: inline-block
+  img
+    height: 2em
+    margin-top: -8px
+    align: left
+
+.content-31
+  position: relative
+  padding-top: 60px
+  padding-bottom: 60px
+  text-align: left
   background: white
   color: #7f8c8d
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-family: 'Source Sans Pro', sans-serif
+  .lead
+    font-size: 20px
+    font-weight: normal
+    color: #7f8c8d
+    line-height: 36px
+  .features
+    font-size: 16px
+    line-height: 26px
+    text-align: left
+    h6
+      padding-top: 40px
+      margin-top: 0px
+      margin-bottom: 0px
+  p
+    font-size: 12px
+  h5
+    margin-top: 0px
+    margin-bottom: 0px
+    vertical-align: middle
+    font-family: 'Source Sans Pro', sans-serif
+    font-size: 31px
+    font-weight: 300
+    color: #000000
+    text-align: left
+  h6
+    margin-top: 0px
+    margin-bottom: 0px
+    padding: 0px
+    line-height: 40px
+    color: #4A4A4A
+    font-family: 'Source Sans Pro', sans-serif
+    font-weight: 300
+    font-size: 30px
+    text-align: left
+  img
+    width: 50%
+    position: relative
+    align-items: middle
+    display: block
+    margin-left: auto
+    margin-right: auto
+
+.content-32
+  position: relative
+  padding-top: 60px
+  padding-bottom: 60px
+  text-align: center
+  background: white
+  color: #7f8c8d
+  font-family: 'Source Sans Pro', sans-serif
   .lead
     font-size: 20px
     font-weight: normal
@@ -16,27 +83,28 @@
     font-size: 35px
     font-weight: normal
     color: #2c3e50
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+    font-family: 'Source Sans Pro', sans-serif
     font-weight: 300
     line-height: 40px
     margin: 0 0 48px
   .features
-    border-top: 2px solid #e6e6e5
-    margin-top: 56px
-    padding-top: 85px
     font-size: 16px
     line-height: 26px
     text-align: left
     h6
+      color: #FF5500
       text-transform: none
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+      font-family: 'Source Sans Pro', sans-serif
       font-weight: 500
       font-size: 20px
       margin: 0 0 20px
 
 @media (max-width: 767px)
+  .content-31
+    h5, h6, p
+      text-align: center
   .content-32 .features
-    padding-top: 70px
+    // padding-top: 70px
 
 @media (max-width: 767px)
   .content-32 .features h6
@@ -44,54 +112,5 @@
 
 @media (max-width: 767px)
   .content-32
-    padding-top: 100px
-    padding-bottom: 100px
-
-.content-28
-  position: relative
-  overflow: hidden
-  padding-top: 128px
-  padding-bottom: 0
-  text-align: center
-  h3
-    font-size: 30px
-    font-weight: normal
-    color: #2c3e50
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
-    padding-bottom: 40px
-    font-weight: 300
-  p
-    font-size: 16px
-    font-weight: normal
-    color: #7f8c8d
-  .col-sm-10 > img
-    width: 100%
-    margin-top: 50px
-    position: relative
-
-@media (max-width: 480px)
-  .content-28
-    padding-top: 100px
-
-.ribbon
-  display: block
-  position: relative
-  margin: 0
-  padding: 0 10px !important
-  background: #e74c3c
-  color: #fff
-  text-align: center
-  font-size: 14px
-  line-height: 24px
-  &:before, &:after
-    display: block
-    position: absolute
-    line-height: 0
-  &:before
-    content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAgCAYAAADe+2JdAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAIcbAACL/wAA/RMAAIWJAACNJgAA5z0AADj/AAAeyY4zee8AAACLSURBVHja7M6xCcIAEAXQZwwpJI0W6V3AVgdwKrF3CWdwAhFcIjhDKiGCoDGxSVAxyQT5zcG94+5G+X4GS+zqOlEnxAKn72aTANs2aHCtIwGmfWjAAfsxhPIWeaSJVxaris98WN4i9/Nc9Rz/r32kSStA8Mri7oeqIsj7vj324QbXLrxghQN+TrwHABFIH/AzT59nAAAAAElFTkSuQmCC')
-    left: -7px
-    bottom: 0
-  &:after
-    content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAIcbAACL/wAA/RMAAIWJAACNJgAA5z0AADj/AAAeyY4zee8AAACMSURBVHja7MwxDoJAFIThf9fVAo2x4A5cwprKytPY2HoJS6/hCbwBoaKi0WxYoyYg+ywICQK9jdPNl/dG5Zu1AA44Azsg1TRZAlvgAkQttlkBhz4CxGO4GEP++Cs0yc2ilWI+NYRBwGyim0svwr2syApHWdff716E6/M13HxUbztAL3I0nW6BE7D/DADKLyXavmqdkAAAAABJRU5ErkJggg==')
-    right: -5px
-    top: 0
+    // padding-top: 100px
+    // padding-bottom: 100px

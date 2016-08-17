@@ -1,25 +1,29 @@
 source 'https://rubygems.org'
-ruby '2.1.2'
+ruby '2.2.3'
 
-gem 'rails',                   '4.1.0'
+gem 'rails',                   '4.2.3'
 gem 'pg'
 gem 'slim'
 gem 'unicorn'
 
 gem 'friendly_id'
 gem 'resque'
+gem 'devise'
+gem 'client_side_validations'
 
 # external services
 gem 'newrelic_rpm'
 gem 'sentry-raven'
+
+gem 'activeadmin', github: 'activeadmin'
 
 # gems to help in rails 4 transition
 gem 'protected_attributes'
 gem 'rails-observers'
 
 # assets
-gem 'sass-rails',     '~> 4.0.0'
-gem 'uglifier',       '>= 1.3.0'
+gem 'sass-rails',     '~> 4.0.4 '
+gem 'uglifier',       '>= 2.7.1'
 gem 'font_assets'
 gem 'modernizr-rails'
 gem 'selectivizr-rails'
@@ -50,6 +54,7 @@ end
 group :development do
   gem 'foreman'
   gem 'thin'
+  gem 'pry'
   gem 'rails-boilerplate'
   gem 'magic_encoding'
   gem 'html2slim'
@@ -64,4 +69,3 @@ group :production do
   gem 'heroku-deflater'
   gem 'rails_12factor'
 end
-
